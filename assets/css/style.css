@@ -1,0 +1,108 @@
+:root {
+    /* variable for colors used  */
+    --colorone: #f1ffff;
+    --colortwo: #AEC4EB;
+    --colorthree: #AED7EB;/* #B5DBF5 */
+    --colorfour: #AEEBD6;
+    --colorfive: #AEB1EB;
+}
+
+body {
+    background-color: var(--colorone);
+}
+
+.header {
+    /* sets up peramiters for the header at the top of the page */
+    padding: 25px;
+    background-color: var(--colorthree);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header h1 {
+    /* makes h1 bigger allows the nav links to be inline with the title */
+    font-size: 35px;
+    display: inline-block;
+}
+
+.header nav {
+    /* setting up the nav bar look */
+    float: right;
+    font-size: 25px;
+}
+
+.header ul {
+    /* removes bullet points */
+    list-style-type: none;
+}
+
+.header li {
+    /* allows links to be side by side */
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me img {
+    margin: 20px;
+    width: 25%;
+}
+
+.about-me p {
+    font-size: 22px;
+}
+
+.about-me b {
+    font-size: 28px;
+}
+
+#work {
+    text-align: center;
+    font-size: 30px;
+}
+
+.work {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background: var(--colorfive);
+    color: #000;
+  }
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: dashed;
+    border-width: 1px;
+    margin: 10px;
+}
+
+.card h3 {
+    background-color: var(--colorthree);
+    padding: 15px;
+    border-style: solid;
+    border-color: var(--colorfour);
+}
+
+.card img {
+    width: 100%;
+    min-width: 400px;
+    border-style: solid;
+    border-color: var(--colorfour);
+  }
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
